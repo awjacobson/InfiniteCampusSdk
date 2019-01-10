@@ -47,6 +47,9 @@
     <Compile Include="Models\CustomStudent.cs" />
     <Compile Include="Models\Identity.cs" />
     <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\Survey.cs" />
+    <Compile Include="Models\SurveyQuestionResponse.cs" />
+    <Compile Include="Models\SurveyResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

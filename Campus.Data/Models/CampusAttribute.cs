@@ -54,8 +54,8 @@ namespace Campus.Data.Models
         [Column("maxSize")]
         public byte? MaxSize { get; set; }
 
-        [Column("Custom")]
-        public bool custom { get; set; }
+        [Column("custom")]
+        public bool Custom { get; set; }
 
         [Column("lock")]
         public bool? _lock { get; set; }
