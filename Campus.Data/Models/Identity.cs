@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics;
 
 namespace Campus.Data.Models
 {
     [Table("Identity")]
+    [DebuggerDisplay("IdentityID={IdentityID}, PersonID={PersonID}")]
     public class Identity
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -17,57 +19,72 @@ namespace Campus.Data.Models
         [Column("identityID")]
         public int IdentityID { get; set; }
 
-        public int personID { get; set; }
+        [Column("personID")]
+        public int PersonID { get; set; }
 
-        [Column(TypeName = "smalldatetime")]
-        public DateTime? effectiveDate { get; set; }
+        [Column("effectiveDate", TypeName = "smalldatetime")]
+        public DateTime? EffectiveDate { get; set; }
 
+        [Column("lastName")]
         [Required]
         [StringLength(50)]
-        public string lastName { get; set; }
+        public string LastName { get; set; }
 
+        [Column("firstName")]
         [StringLength(50)]
-        public string firstName { get; set; }
+        public string FirstName { get; set; }
 
+        [Column("middleName")]
         [StringLength(50)]
-        public string middleName { get; set; }
+        public string MiddleName { get; set; }
 
+        [Column("suffix")]
         [StringLength(50)]
-        public string suffix { get; set; }
+        public string Suffix { get; set; }
 
+        [Column("alias")]
         [StringLength(50)]
-        public string alias { get; set; }
+        public string Alias { get; set; }
 
+        [Column("gender")]
         [StringLength(1)]
-        public string gender { get; set; }
+        public string Gender { get; set; }
 
-        [Column(TypeName = "smalldatetime")]
-        public DateTime? birthdate { get; set; }
+        [Column("birthdate", TypeName = "smalldatetime")]
+        public DateTime? Birthdate { get; set; }
 
+        [Column("ssn")]
         [StringLength(9)]
-        public string ssn { get; set; }
+        public string Ssn { get; set; }
 
+        [Column("raceEthnicity")]
         [StringLength(3)]
-        public string raceEthnicity { get; set; }
+        public string RaceEthnicity { get; set; }
 
+        [Column("birthCountry")]
         [StringLength(4)]
-        public string birthCountry { get; set; }
+        public string BirthCountry { get; set; }
 
-        [Column(TypeName = "smalldatetime")]
-        public DateTime? dateEnteredUS { get; set; }
+        [Column("dateEnteredUS", TypeName = "smalldatetime")]
+        public DateTime? DateEnteredUS { get; set; }
 
+        [Column("birthCountry")]
         [StringLength(4)]
-        public string birthVerification { get; set; }
+        public string BirthVerification { get; set; }
 
+        [Column("comments")]
         [StringLength(255)]
-        public string comments { get; set; }
+        public string Comments { get; set; }
 
-        public int districtID { get; set; }
+        [Column("districtID")]
+        public int DistrictID { get; set; }
 
+        [Column("hispanicEthnicity")]
         [StringLength(2)]
-        public string hispanicEthnicity { get; set; }
+        public string HispanicEthnicity { get; set; }
 
-        public Guid? identityGUID { get; set; }
+        [Column("identityGUID")]
+        public Guid? IdentityGUID { get; set; }
 
         [StringLength(10)]
         public string lastNamePhonetic { get; set; }

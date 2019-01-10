@@ -1,10 +1,12 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics;
 
 namespace Campus.Data.Models
 {
     [Table("Survey")]
+    [DebuggerDisplay("SurveyID={SurveyID}, UserID={UserID}")]
     public class Survey
     {
         [Column("surveyID")]

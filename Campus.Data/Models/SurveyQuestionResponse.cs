@@ -1,9 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics;
 
 namespace Campus.Data.Models
 {
     [Table("SurveyQuestionResponse")]
+    [DebuggerDisplay("QuestionResponseID={QuestionResponseID}, ResponseID={ResponseID}")]
     public class SurveyQuestionResponse
     {
         [Column("questionResponseID")]
@@ -20,6 +22,7 @@ namespace Campus.Data.Models
         public int QuestionID { get; set; }
 
         [Column("responseID")]
+        [ForeignKey("SurveyResponse")]
         public int ResponseID { get; set; }
 
         [Column("response")]

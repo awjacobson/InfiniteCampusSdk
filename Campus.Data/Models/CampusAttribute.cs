@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics;
 
 namespace Campus.Data.Models
 {
     [Table("CampusAttribute")]
+    [DebuggerDisplay("AttributeID={AttributeID}, Name={Name}")]
     public class CampusAttribute
     {
         public CampusAttribute()

@@ -1,10 +1,12 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics;
 
 namespace Campus.Data.Models
 {
     [Table("CustomStudent")]
+    [DebuggerDisplay("CustomID={CustomID}, PersonID={PersonID}")]
     public class CustomStudent
     {
         [Column("customID")]
