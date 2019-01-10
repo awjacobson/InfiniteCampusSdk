@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CampusSdk")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Infinite Campus SDK for .Net")]
+[assembly: AssemblyDescription("Infinite Campus SDK for .Net")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CampusSdk")]
+[assembly: AssemblyCompany("Aaron Jacobson")]
+[assembly: AssemblyProduct("")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
