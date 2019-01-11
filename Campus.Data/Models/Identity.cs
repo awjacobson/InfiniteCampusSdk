@@ -68,7 +68,7 @@ namespace Campus.Data.Models
         [Column("dateEnteredUS", TypeName = "smalldatetime")]
         public DateTime? DateEnteredUS { get; set; }
 
-        [Column("birthCountry")]
+        [Column("birthVerification")]
         [StringLength(4)]
         public string BirthVerification { get; set; }
 
@@ -86,143 +86,187 @@ namespace Campus.Data.Models
         [Column("identityGUID")]
         public Guid? IdentityGUID { get; set; }
 
+        [Column("lastNamePhonetic")]
         [StringLength(10)]
-        public string lastNamePhonetic { get; set; }
+        public string LastNamePhonetic { get; set; }
 
+        [Column("firstNamePhonetic")]
         [StringLength(10)]
-        public string firstNamePhonetic { get; set; }
+        public string FirstNamePhonetic { get; set; }
 
-        [Column(TypeName = "smalldatetime")]
-        public DateTime? dateEnteredState { get; set; }
+        [Column("dateEnteredState", TypeName = "smalldatetime")]
+        public DateTime? DateEnteredState { get; set; }
 
+        [Column("birthCertificate")]
         [StringLength(12)]
-        public string birthCertificate { get; set; }
+        public string BirthCertificate { get; set; }
 
+        [Column("raceEthnicityFed")]
         [StringLength(1)]
-        public string raceEthnicityFed { get; set; }
+        public string RaceEthnicityFed { get; set; }
 
+        [Column("raceEthnicityDetermination")]
         [StringLength(2)]
-        public string raceEthnicityDetermination { get; set; }
+        public string RaceEthnicityDetermination { get; set; }
 
+        [Column("immigrant")]
         [StringLength(2)]
-        public string immigrant { get; set; }
+        public string Immigrant { get; set; }
 
-        [Column(TypeName = "smalldatetime")]
+        [Column("dateEnteredUSSchool", TypeName = "smalldatetime")]
         public DateTime? dateEnteredUSSchool { get; set; }
 
+        [Column("birthStateNoSIF")]
         [StringLength(2)]
-        public string birthStateNoSIF { get; set; }
+        public string BirthStateNoSIF { get; set; }
 
+        [Column("birthCity")]
         [StringLength(30)]
-        public string birthCity { get; set; }
+        public string BirthCity { get; set; }
 
+        [Column("birthCounty")]
         [StringLength(30)]
-        public string birthCounty { get; set; }
+        public string BirthCounty { get; set; }
 
+        [Column("birthVerificationBIE")]
         [StringLength(4)]
         public string birthVerificationBIE { get; set; }
 
-        public int? modifiedByID { get; set; }
+        [Column("modifiedByID")]
+        public int? ModifiedByID { get; set; }
 
-        [Column(TypeName = "smalldatetime")]
-        public DateTime? modifiedDate { get; set; }
+        [Column("modifiedDate", TypeName = "smalldatetime")]
+        public DateTime? ModifiedDate { get; set; }
 
+        [Column("refugee")]
         [StringLength(2)]
-        public string refugee { get; set; }
+        public string Refugee { get; set; }
 
+        [Column("homePrimaryLanguage")]
         [StringLength(5)]
-        public string homePrimaryLanguage { get; set; }
+        public string HomePrimaryLanguage { get; set; }
 
+        [Column("stateHispanicEthnicity")]
         [StringLength(2)]
-        public string stateHispanicEthnicity { get; set; }
+        public string StateHispanicEthnicity { get; set; }
 
+        [Column("birthState")]
         [StringLength(10)]
-        public string birthState { get; set; }
+        public string BirthState { get; set; }
 
+        [Column("homePrimaryLanguageBIE")]
         [StringLength(5)]
-        public string homePrimaryLanguageBIE { get; set; }
+        public string HomePrimaryLanguageBIE { get; set; }
 
+        [Column("HomeSecondaryLanguageBIE")]
         [StringLength(5)]
-        public string homeSecondaryLanguageBIE { get; set; }
+        public string HomeSecondaryLanguageBIE { get; set; }
 
+        [Column("languageAlt")]
         [StringLength(5)]
-        public string languageAlt { get; set; }
+        public string LanguageAlt { get; set; }
 
+        [Column("languageAlt2")]
         [StringLength(5)]
-        public string languageAlt2 { get; set; }
+        public string LanguageAlt2 { get; set; }
 
-        public bool foreignLanguageProficiency { get; set; }
+        [Column("foreignLanguageProficiency")]
+        public bool ForeignLanguageProficiency { get; set; }
 
-        public bool literacyLanguage { get; set; }
+        [Column("literacyLanguage")]
+        public bool LiteracyLanguage { get; set; }
 
+        [Column("legalFirstName")]
         [StringLength(50)]
-        public string legalFirstName { get; set; }
+        public string LegalFirstName { get; set; }
 
+        [Column("legalLastName")]
         [StringLength(50)]
-        public string legalLastName { get; set; }
+        public string LegalLastName { get; set; }
 
+        [Column("legalMiddleName")]
         [StringLength(50)]
-        public string legalMiddleName { get; set; }
+        public string LegalMiddleName { get; set; }
 
+        [Column("LegalSuffix")]
         [StringLength(50)]
         public string legalSuffix { get; set; }
 
+        [Column("legalGender")]
         [StringLength(1)]
-        public string legalGender { get; set; }
+        public string LegalGender { get; set; }
 
+        [Column("usCitizen")]
         [StringLength(2)]
-        public string usCitizen { get; set; }
+        public string UsCitizen { get; set; }
 
+        [Column("visaType")]
         [StringLength(5)]
-        public string visaType { get; set; }
+        public string VisaType { get; set; }
 
+        [Column("originCountry")]
         [StringLength(4)]
-        public string originCountry { get; set; }
+        public string OriginCountry { get; set; }
 
+        [Column("hispanicWriteIn")]
         [StringLength(50)]
-        public string hispanicWriteIn { get; set; }
+        public string HispanicWriteIn { get; set; }
 
+        [Column("asianWriteIn")]
         [StringLength(50)]
-        public string asianWriteIn { get; set; }
+        public string AsianWriteIn { get; set; }
 
+        [Column("caribbeanWriteIn")]
         [StringLength(50)]
-        public string caribbeanWriteIn { get; set; }
+        public string CaribbeanWriteIn { get; set; }
 
+        [Column("centralAfricanWriteIn")]
         [StringLength(50)]
-        public string centralAfricanWriteIn { get; set; }
+        public string CentralAfricanWriteIn { get; set; }
 
+        [Column("eastAfricanWriteIn")]
         [StringLength(50)]
-        public string eastAfricanWriteIn { get; set; }
+        public string EastAfricanWriteIn { get; set; }
 
+        [Column("latinAmericanWriteIn")]
         [StringLength(50)]
-        public string latinAmericanWriteIn { get; set; }
+        public string LatinAmericanWriteIn { get; set; }
 
+        [Column("southAfricanWriteIn")]
         [StringLength(50)]
-        public string southAfricanWriteIn { get; set; }
+        public string SouthAfricanWriteIn { get; set; }
 
+        [Column("westAfricanWriteIn")]
         [StringLength(50)]
-        public string westAfricanWriteIn { get; set; }
+        public string WestAfricanWriteIn { get; set; }
 
+        [Column("blackWriteIn")]
         [StringLength(50)]
-        public string blackWriteIn { get; set; }
+        public string BlackWriteIn { get; set; }
 
+        [Column("alaskaNativeWriteIn")]
         [StringLength(50)]
-        public string alaskaNativeWriteIn { get; set; }
+        public string AlaskaNativeWriteIn { get; set; }
 
+        [Column("americanIndianWriteIn")]
         [StringLength(50)]
-        public string americanIndianWriteIn { get; set; }
+        public string AmericanIndianWriteIn { get; set; }
 
+        [Column("americanIndianWriteIn")]
         [StringLength(50)]
         public string pacificIslanderWriteIn { get; set; }
 
+        [Column("easternEuropeanWriteIn")]
         [StringLength(50)]
-        public string easternEuropeanWriteIn { get; set; }
+        public string EasternEuropeanWriteIn { get; set; }
 
+        [Column("middleEasternWriteIn")]
         [StringLength(50)]
-        public string middleEasternWriteIn { get; set; }
+        public string MiddleEasternWriteIn { get; set; }
 
+        [Column("northAfricanWriteIn")]
         [StringLength(50)]
-        public string northAfricanWriteIn { get; set; }
+        public string NorthAfricanWriteIn { get; set; }
 
         public virtual Person Person { get; set; }
 
