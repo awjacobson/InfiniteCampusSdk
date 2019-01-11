@@ -114,7 +114,7 @@ namespace Campus.Data.Models
         public string Immigrant { get; set; }
 
         [Column("dateEnteredUSSchool", TypeName = "smalldatetime")]
-        public DateTime? dateEnteredUSSchool { get; set; }
+        public DateTime? DateEnteredUSSchool { get; set; }
 
         [Column("birthStateNoSIF")]
         [StringLength(2)]
@@ -130,7 +130,7 @@ namespace Campus.Data.Models
 
         [Column("birthVerificationBIE")]
         [StringLength(4)]
-        public string birthVerificationBIE { get; set; }
+        public string BirthVerificationBIE { get; set; }
 
         [Column("modifiedByID")]
         public int? ModifiedByID { get; set; }
@@ -188,9 +188,9 @@ namespace Campus.Data.Models
         [StringLength(50)]
         public string LegalMiddleName { get; set; }
 
-        [Column("LegalSuffix")]
+        [Column("legalSuffix")]
         [StringLength(50)]
-        public string legalSuffix { get; set; }
+        public string LegalSuffix { get; set; }
 
         [Column("legalGender")]
         [StringLength(1)]
@@ -252,9 +252,9 @@ namespace Campus.Data.Models
         [StringLength(50)]
         public string AmericanIndianWriteIn { get; set; }
 
-        [Column("americanIndianWriteIn")]
+        [Column("pacificIslanderWriteIn")]
         [StringLength(50)]
-        public string pacificIslanderWriteIn { get; set; }
+        public string PacificIslanderWriteIn { get; set; }
 
         [Column("easternEuropeanWriteIn")]
         [StringLength(50)]
