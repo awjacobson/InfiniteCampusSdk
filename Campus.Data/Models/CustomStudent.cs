@@ -14,12 +14,14 @@ namespace Campus.Data.Models
         public int CustomID { get; set; }
 
         [Column("personID")]
+        [ForeignKey("Person")]
         public int PersonID { get; set; }
 
         [Column("enrollmentID")]
         public int? EnrollmentID { get; set; }
 
         [Column("attributeID")]
+        [ForeignKey("CampusAttribute")]
         public int AttributeID { get; set; }
 
         [Column("value")]

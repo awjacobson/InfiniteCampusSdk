@@ -11,6 +11,7 @@ namespace Campus.Data.Models
     {
         [Column("personID")]
         [Key]
+        [ForeignKey("Person")]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int PersonID { get; set; }
 
@@ -91,8 +92,8 @@ namespace Campus.Data.Models
         [Column("workTextMessenger")]
         public int? WorkTextMessenger { get; set; }
 
-        [Column("CellTextMessenger")]
-        public int? cellTextMessenger { get; set; }
+        [Column("cellTextMessenger")]
+        public int? CellTextMessenger { get; set; }
 
         [Column("secondaryEmailMessenger")]
         public int? SecondaryEmailMessenger { get; set; }

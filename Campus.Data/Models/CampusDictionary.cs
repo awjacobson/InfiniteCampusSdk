@@ -14,6 +14,7 @@ namespace Campus.Data.Models
         public int DictionaryID { get; set; }
 
         [Column("attributeID")]
+        [ForeignKey("CampusAttribute")]
         public int AttributeID { get; set; }
 
         [Column("code")]

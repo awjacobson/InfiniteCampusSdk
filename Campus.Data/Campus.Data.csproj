@@ -48,11 +48,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Calendar.cs" />
     <Compile Include="Models\CampusAttribute.cs" />
     <Compile Include="Models\CampusContext.cs" />
     <Compile Include="Models\CampusDictionary.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\CustomStudent.cs" />
+    <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\Identity.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Survey.cs" />
