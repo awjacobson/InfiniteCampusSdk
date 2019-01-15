@@ -8,7 +8,6 @@
     <owners>$author$</owners>
     <projectUrl>https://github.com/awjacobson/InfiniteCampusSdk.git</projectUrl>
     <license type="expression">MIT</license>
-    <licenseUrl>https://github.com/awjacobson/InfiniteCampusSdk/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>Initial version</releaseNotes>
