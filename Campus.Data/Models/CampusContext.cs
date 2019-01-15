@@ -17,6 +17,7 @@ namespace Campus.Data.Models
         public virtual DbSet<Survey> Surveys { get; set; }
         public virtual DbSet<SurveyPage> SurveyPages { get; set; }
         public virtual DbSet<SurveyQuestion> SurveyQuestions { get; set; }
+        public virtual DbSet<SurveyQuestionAnswer> SurveyQuestionAnswers { get; set; }
         public virtual DbSet<SurveyQuestionResponse> SurveyQuestionResponses { get; set; }
         public virtual DbSet<SurveyResponse> SurveyResponses { get; set; }
 
