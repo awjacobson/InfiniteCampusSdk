@@ -57,6 +57,7 @@
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\Identity.cs" />
     <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Survey.cs" />
     <Compile Include="Models\SurveyPage.cs" />
     <Compile Include="Models\SurveyQuestion.cs" />
